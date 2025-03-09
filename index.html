@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do list</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do list</h1>
-        <input type="text" id="taskInput" placeholder="Add task">
-        <button id="addTaskBtn">Add</button>
-        <ul id="taskList"></ul>
+    <h1>To-Do List</h1>
+    <div class="input-area">
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button id="addTaskBtn">Add Task</button>
+        <span id="errorMsg" class="error-msg"></span>
+      </div>
+  
+      <div class="filter-area">
+        <button id="showAllBtn">All</button>
+        <button id="showActiveBtn">Active</button>
+        <button id="showDoneBtn">Completed</button>
+      </div>
+  
+      <ul id="taskList"></ul>
+  
+      <div class="counter">
+        <span id="taskCounter">Tasks left: 0</span>
+      </div>
     </div>
+  
     
 
     <script src="script.js"></script>
